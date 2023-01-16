@@ -1,0 +1,10 @@
+﻿{
+  "Version": "14.1.0",
+  "Name": "soju test",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "127.0.0.1:5000/upload/ballz",
+  "Body": "MultipartFormData",
+  "FileFormName": "file",
+  "URL": "{json:files[0].url}"
+}
