@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block metadata%}
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:image" content="{{ url_for('static',filename=file) }}">
+<meta property="og:title" content="soju.services | {{name}}">
+<meta id="embed-desc" property="og:description" content="">
+
+{%endblock%}
+
+{%block title%} {{file}} {%endblock%}
+{%block content%}
+
+
+<a href="{{ url_for('static',filename=file) }}"> Download - {{name}}</a>
+
+{%endblock%}

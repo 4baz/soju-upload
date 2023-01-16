@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soju - dashboard {{ username }}</title>
+</head>
+<body>
+
+    <h1>Soju - uploder config</h1>
+    <p>Alpha 0.0.1</p><br><br>
+
+    <p>Welcome {{ username }}</p>
+    <a href="/logout"><p>LOGOUT</p></a>
+
+
+<form method="post">
+    <h2>Domain Config</h2>
+
+    <select id="domains" name="domains">
+
+        {% for domain in domain_list%}
+
+        <option id="domain" name="domain" value="{{domain}}">{{domain}}</option>
+
+        {% endfor %}
+
+
+        <button type="submit">Save</button>
+
+    </select>
+
+</form>
+
+
+
+</body>
+</html>
